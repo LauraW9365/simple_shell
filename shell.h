@@ -1,7 +1,6 @@
 #ifndef SHELL_H
 #define SHELL_H
 
-
 /*
  * ---LIBRARIES---
  */
@@ -18,13 +17,11 @@
 
 #define BUFFER_SIZE 1024
 
-
 /*
  * ---PROTOTYPES---
  */
 void shell_interactive(void);
 void shell_no_interactive(void);
-
 
 /*---Macros---*/
 #define TOK_DELIM " \t\r\n\a\""
@@ -47,7 +44,5 @@ char **_tokenize(char *line);
 char *_gettenv(const char *type, char **env);
 ssize_t _getline(char **lineptr, size_t *n, FILE *str);
 char *_realloc(char *ptr, size_t size1, size_t new_size);
-
-
 
 #endif

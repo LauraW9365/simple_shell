@@ -5,7 +5,7 @@
 /*
  * ---LIBRARIES---
  */
-#include <stdio.h> 
+#include <stdio.h>
 #include <stdlib.h>
 #include <fcntl.h>
 #include <sys/stat.h>
@@ -47,8 +47,7 @@ char **_tokenize(char *line);
 char *_gettenv(const char *type, char **env);
 ssize_t _getline(char **lineptr, size_t *n, FILE *str);
 char *_realloc(char *ptr, size_t size1, size_t new_size);
-void assign_linepointer(char **line_ptr, size_t *line_size, char *buffer, ssize_t length);
-void help_command(const char* command);
+
 
 
 #endif
